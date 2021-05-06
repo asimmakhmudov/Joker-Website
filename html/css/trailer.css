@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 100;
+    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    
+    
+}
+body {
+    background: url(photo/trailerbckg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 1;
+}
+.menu {
+    display: flex;
+    position: fixed;
+    background: #262626
+    linear-gradient(to bottom,black, #262626, black);
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 100;
+}
+.menu ul {
+    position: relative;
+    display: flex;
+    
+}
+.menu li{
+    position: relative;
+    list-style: none;
+    
+}
+.menu li a {
+    display: block;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    font-size: 27px;
+    padding: 25px;
+    letter-spacing: 2px;
+}
+.cool::after {
+    content: '';
+    display: flex;
+    background: #fff;
+    width: 0;
+    height: 4px;
+    transition: 0.5s;
+}
+.cool:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+p {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.video {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 60%;
+    width: 900px;
+    height: 400px;
+    border-style: hidden;
+    transform: translate(-50%, -50%);
+    
+}

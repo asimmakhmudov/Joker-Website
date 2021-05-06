@@ -1,0 +1,140 @@
+* {
+    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: scroll no-repeat;
+    background-image: url(photo/joker4.jpg);
+    background-size: cover;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 40px 0 50px;
+    
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 27px;
+    padding: 0 0;
+}
+.cool::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 0;
+    height: 4px;
+    transition: 0.5s;
+}
+.cool:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+.tenor-gif-embed {
+    width: 149px;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+h1 {
+    font-size: 23px;
+    position: absolute;
+    letter-spacing: 3px;
+    left: 45%;
+    transform: translate(-45%);
+    margin-top: 10px;
+    
+}
+h2 {
+    position: relative;
+    font-size: 5rem;
+    margin-left: 5%;
+    margin-top: 10px;
+    display: inline-block;
+    left: 5%;
+    transform: translate(2s);
+    overflow-x: 3s;
+    animation: write infinite 3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes write {
+    0%
+    {
+        width: 0ch;
+    }
+    100%
+    {
+        width: 8ch;
+    }
+}
+.scroll-bg {
+    background: none;
+    width: 400px;
+    margin-left: 10%;
+}
+.scroll-div {
+    width: 550px;
+    background: none;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+::-webkit-scrollbar{
+    width: 10PX;
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid #ffffff26;
+    box-shadow: inset 0 0 2.5px 2px rgb(255, 255, 255)
+}
+::-webkit-scrollbar-thumb {
+    position: fixed;
+    background: linear-gradient(to top,#42ff62,rgb(255, 23, 23));
+    border-radius: 3px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.textbox {
+    width: 500px;
+    display: block;
+    left: 10%;  
+    font-size: 20px;
+    font-family: cursive;
+}
+.icons {
+    display: inline-block;
+    position: absolute;
+    bottom: 35%;
+    left: 100%;
+    font-size: 28px;
+    transform: translate(-200%);
+    color: #fff;
+    transform: translate();
+}
+.icons i {
+    margin: 10px 15px 10px 15px;
+}
+.icons i::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    transition: 0.5s;
+}
+.icons i:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
